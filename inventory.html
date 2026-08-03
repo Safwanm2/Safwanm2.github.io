@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventory | Sherway Auto</title>
+<meta name="description" content="Browse current pre-owned inventory at Sherway Auto in Concord, Ontario. Click any listing for photos, pricing and CARFAX.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="https://car-showcase-keeper.lovable.app/__l5e/assets-v1/05df7dc6-3bc8-4f63-96ff-0c09a5d47a42/sherway-logo.png" alt="Sherway Auto logo">
+      <span>Sherway Auto<small>Concord, Ontario</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="inventory.html" class="active">Inventory</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="btn" href="tel:+14167104365">Call the lot</a>
+    </div>
+  </nav>
+</header>
+
+<div class="lane"></div>
+
+<div class="wrap page-head">
+  <span class="tag mono" style="color:var(--red-bright); font-family:'JetBrains Mono',monospace; font-size:0.8rem; letter-spacing:0.14em; text-transform:uppercase;">Available now</span>
+  <h1>Current inventory</h1>
+  <p class="section-sub">Every car is hand-picked and inspected. Click any listing to see photos, full specs and its CARFAX report.</p>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All (9)</button>
+    <button class="filter-btn" data-filter="sale">For sale</button>
+    <button class="filter-btn" data-filter="soon">Coming soon</button>
+  </div>
+</div>
+
+<section style="padding-top:10px;">
+  <div class="wrap">
+    <div class="grid" id="inventory-grid"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="tag">Track record</span>
+        <h2>Recently sold</h2>
+        <p class="section-sub">Delivered to happy owners — a look at what's moved off the lot recently.</p>
+      </div>
+    </div>
+    <div class="grid" id="sold-grid"></div>
+  </div>
+</section>
+
+<div class="lane"></div>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>Sherway Auto — Concord, Ontario</span>
+    <span>17-3300 Steeles Ave W · <a href="tel:+14167104365">416-710-4365</a></span>
+  </div>
+</footer>
+
+<!-- Detail modal (shared markup, populated by script.js) -->
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <div class="modal-gallery" id="modal-gallery"></div>
+    <div class="sticker" id="modal-sticker"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
