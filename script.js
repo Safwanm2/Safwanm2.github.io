@@ -112,7 +112,7 @@ const CARS = [
     desc: 'Top trim XLE with leather interior, sunroof and alloy wheels.',
     features: ['Automatic', 'Leather', 'Sunroof', 'Alloy wheels', 'Keyless entry'],
     carfax: 'https://vhr.carfax.ca/?id=r1X6IOICuoH7ZIql%2F79SPQIhedobXNe2',
-    images: ['https://car-showcase-keeper.lovable.app/__l5e/assets-v1/46604a4c-b84d-4b74-b95a-a279ca70b0ff/11camryxle.jpg']
+    images: ['https://car-showcase-keeper.lovable.app/__l5e/assets-v1/46604a4c-b84d-4b74-b95a-a279ca70b0ff/11camryxle.jpg', 'https://cdn.jdpower.com/JDPA_2021%20Toyota%20Camry%20TRD%20White%20Front%20Quarter.jpg']
   },
   {
     id: 'mazda3-2014',
